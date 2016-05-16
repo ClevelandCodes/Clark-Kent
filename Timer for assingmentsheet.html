@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Timer</title>
+  <script>
+    
+    var clock = setInterval("showtime()", 1000);
+    
+    function showtime() {
+      var now = new Date();
+      var time = now.toLocaleTimeString();
+      document.getElementById("ptime").innerHTML = time;
+    }       
+  </script>
+</head>
+<body>
+    <p id="ptime"></p>
+</body>
+</html>
